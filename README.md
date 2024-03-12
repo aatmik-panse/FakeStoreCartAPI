@@ -42,3 +42,10 @@ mvn test
 Use code with caution.
 This command will run all the tests present in the project and display the results.
 
+<h2>PostMap Testing ScreenShorts</h2> 
+<img width="1061" alt="Screenshot 2024-03-12 at 5 39 52 PM" src="https://github.com/aatmik-panse/FakeStoreCartAPI/assets/140905599/1feef63e-c998-44a6-83dc-65403f3ef0cc">
+
+<img width="1060" alt="Screenshot 2024-03-12 at 5 39 25 PM" src="https://github.com/aatmik-panse/FakeStoreCartAPI/assets/140905599/e148370b-96c7-4882-a2cc-30be5414bdb7">
+
+<img width="1016" alt="Screenshot 2024-03-12 at 5 39 13 PM" src="https://github.com/aatmik-panse/FakeStoreCartAPI/assets/140905599/9098cd17-b7f7-45de-a7a1-b6d977e1faa4">
+
