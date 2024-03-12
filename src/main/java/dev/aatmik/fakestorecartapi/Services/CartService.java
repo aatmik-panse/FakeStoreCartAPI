@@ -8,10 +8,11 @@ import java.util.List;
 public interface CartService {
     List<Cart> getAllCarts();
     Cart getCartById(Long id);
-    Cart getCartByUserId(Long userId);
+    ArrayList<Cart> getCartByUserId(Long userId);
     void createCart(Cart cart);
     void updateCart(Long id, Cart cart);
     void deleteCart(Long id);
 
     ArrayList<Cart> getByDateRange(Date start, Date end);
 }
+//done

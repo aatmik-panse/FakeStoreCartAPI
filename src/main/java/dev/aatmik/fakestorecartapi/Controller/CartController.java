@@ -28,13 +28,13 @@ public class CartController {
         return cartService.getCartById(id);
     }
     @GetMapping("/carts/user/{userId}")
-    public Cart getCartByUserId(@PathVariable("userId") Long userId) {
+    public ArrayList<Cart> getCartByUserId(@PathVariable("userId") Long userId) {
         return cartService.getCartByUserId(userId);
     }
 
     @PostMapping("/carts")
     public void createCart(Cart cart) {
-         cartService.createCart(cart);
+        cartService.createCart(cart);
     }
     @PutMapping("/carts/{id}")
     public void updateCart(@PathVariable("id") Long id, Cart cart) {

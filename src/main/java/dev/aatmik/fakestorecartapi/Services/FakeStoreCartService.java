@@ -44,15 +44,23 @@ public class FakeStoreCartService implements CartService{
         return cart;
     }
     @Override
-    public Cart getCartByUserId(Long userId) {
-        FakeStoreCartDTO fakeStoreCartDTO = restTemplate.getForObject("https://fakestoreapi.com/carts/user/" + userId,
-                FakeStoreCartDTO.class);
-        Cart cart = new Cart();
-        cart.setId(fakeStoreCartDTO.getId());
-        cart.setUserId(fakeStoreCartDTO.getUserId());
-        cart.setDate(fakeStoreCartDTO.getDate());
-        cart.setProducts(fakeStoreCartDTO.getProducts());
-        return cart;
+    public ArrayList<Cart> getCartByUserId(Long userId){
+        FakeStoreCartDTO[] fakeStoreCartDTOS = restTemplate.getForObject(
+                "https://fakestoreapi.com/carts/user/"+userId,
+                FakeStoreCartDTO[].class
+        );
+        ArrayList<Cart> carts = new ArrayList<>();
+        for(FakeStoreCartDTO ele: fakeStoreCartDTOS) {
+            Cart cart = new Cart();
+            cart.setId(ele.getId());
+            cart.setUserId(ele.getUserId());
+            cart.setDate(ele.getDate());
+            cart.setProducts(ele.getProducts());
+            carts.add(cart);
+        }
+        System.out.println("All products fetched successfully!!!");
+        return carts;
+
     }
     @Override
     public void createCart(Cart cart) {
