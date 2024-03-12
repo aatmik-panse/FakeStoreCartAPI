@@ -12,7 +12,7 @@ mvn clean install
 
 This command downloads and installs all the necessary libraries.
 
-Running the application
+<h2>Running the application</h2>
 Start the application: Run the following command in your terminal:
 Bash
 mvn spring-boot:run
