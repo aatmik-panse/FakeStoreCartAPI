@@ -19,7 +19,7 @@ mvn spring-boot:run
 Use code with caution.
 This will start the Spring Boot application and expose the API endpoints.
 
-API Endpoints
+<h2>API Endpoints</h2>
 The API provides functionalities related to managing carts:
 
 GET /hello: Returns a simple "Hello, World!" message.
