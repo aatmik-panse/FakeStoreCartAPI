@@ -1,7 +1,7 @@
 # FakeStoreCartAPI
 This file outlines the instructions for setting up, running, and testing the Fake Store Cart API project.
 
-Prerequisites
+<h2>Prerequisites</h2>
 Java 11 or above
 Maven build tool
 Setup
